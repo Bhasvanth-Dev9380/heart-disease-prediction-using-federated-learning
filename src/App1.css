@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+html, body {
+  overflow: hidden;
+}
+
+.app-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  background: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Sidebar with Scroll */
+.sidebar {
+  width: 30%;
+  background: #eef1f5;
+  padding: 20px;
+  text-align: left;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  height: 90vh;
+}
+
+.sidebar h2 {
+  color: #333;
+  font-size: 20px;
+}
+
+/* Cards for Input */
+.input-card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-card h3 {
+  margin-top: 0;
+  color: #444;
+}
+
+.input-card label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+/* Predict Button */
+.predict-button {
+  background: #d33f49;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.predict-button:hover {
+  background: #b32d38;
+  transform: scale(1.05);
+}
+
+/* Main Content */
+.main-content {
+  width: 70%;
+  padding: 30px;
+  text-align: center;
+}
+
+.result-box {
+  padding: 12px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* Prediction Results */
+.positive {
+  background: #ffcccc;
+  color: #d33f49;
+}
+
+.negative {
+  background: #ccffcc;
+  color: #228B22;
+}
+
+/* Transaction Display */
+.transaction-box {
+  background: #eef1f5;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.transaction-id {
+  font-family: monospace;
+  background: #333;
+  color: #fff;
+  padding: 8px;
+  display: inline-block;
+  border-radius: 5px;
+  word-break: break-word;
+}
+
+/* Fetch Prediction Button */
+.fetch-button {
+  background: #008cba;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.fetch-button:hover {
+  background: #0073a8;
+  transform: scale(1.05);
+}
+
+/* Retrieved Data Box */
+.retrieved-data-box {
+  background: #fff3e0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Patient Data Table */
+.patient-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.patient-data-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  font-size: 16px;
+}
+
+.patient-data-table td:first-child {
+  font-weight: bold;
+  color: #444;
+}
+
+.patient-data-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* JSON Data Display */
+.json-box {
+  background: #272822;
+  color: #f8f8f2;
+  font-family: monospace;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+  .sidebar, .main-content {
+    width: 100%;
+  }
+}
+
+
+.download-button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.download-button:hover {
+  background: #388E3C;
+  transform: scale(1.05);
+}
